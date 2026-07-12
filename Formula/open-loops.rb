@@ -1,20 +1,20 @@
 class OpenLoops < Formula
   desc "Recupere o contexto de trabalhos pausados: o que começou, onde parou, qual o próximo passo"
   homepage "https://github.com/carvalhosauro/open-loops"
-  version "1.6.1"
+  version "1.6.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/carvalhosauro/open-loops/releases/download/v1.6.1/open-loops-aarch64-apple-darwin.tar.xz"
-      sha256 "83e4f5600543b3e5c5c247fb961dae6509813e4e2baad91be546f0035fd9b71e"
+      url "https://github.com/carvalhosauro/open-loops/releases/download/v1.6.2/open-loops-aarch64-apple-darwin.tar.xz"
+      sha256 "281a33bce8be650e3ac7a3d42c773ad777c39e24b59648c594e4e99dd0621134"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carvalhosauro/open-loops/releases/download/v1.6.1/open-loops-x86_64-apple-darwin.tar.xz"
-      sha256 "77d4e6a18faa46c9c887b46f666124c730ee724ca820589f36e5e35bc820ebee"
+      url "https://github.com/carvalhosauro/open-loops/releases/download/v1.6.2/open-loops-x86_64-apple-darwin.tar.xz"
+      sha256 "c5b989d88e26c883b7b5970906711925e393f416aee1dae613357b62ed90d36b"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/carvalhosauro/open-loops/releases/download/v1.6.1/open-loops-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "bd74e1a59efbcb7beb33008c78aaa2493c51c04b8387b89a38e0e68e48fd3d87"
+    url "https://github.com/carvalhosauro/open-loops/releases/download/v1.6.2/open-loops-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "52210c74b369272a051db1d33ef0a4372cc9070559ea5127ce6b644c5b542780"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
